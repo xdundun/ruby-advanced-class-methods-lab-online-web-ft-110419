@@ -59,7 +59,7 @@ class Song
     return song
   end
 
-  def self.create_from_filename(name)
+  def self.create_from_filename(name) # UPDATE WITH REGEX FOR SPLIT
     song = self.new
     artist = name.split(" - ")
     title = artist[1].split(".")
